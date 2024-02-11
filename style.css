@@ -1,3 +1,79 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+body{
+  overflow-x: hidden;
+}
 .form-control{
-    width: 50vw;
+    width: 30vw;
+}
+.offcanvas{
+  background-color: rgba(158, 154, 154, 0.902);
+}
+
+.body1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/Images/Front\ page.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: white;
+  flex-wrap: wrap;
+  
+ width: 100vw;
+height: 100vh;
+
+}
+.firsth1 {
+  position: relative;
+  top: -750px; 
+}
+.firstp1 {
+  position: relative;
+  left: 100%; /* Start the element to the right of its resting position */
+}
+
+.navbar{
+  background: transparent !important;
+  
+}
+.navbar-brand{
+  color: white;
+}
+.navbar-toggler{
+  background-color: white;
+  
+}
+.body2{
+
+
+  background-color: #111b2e;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.body3{
+ display: flex;
+justify-content: space-between;
+}
+.body3first{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image2{
+  width: 40vw;
+  height: 100vh;
 }
