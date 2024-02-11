@@ -80,3 +80,13 @@ background-color: #111b2e;
   width: 40vw;
   height: 100vh;
 }
+.body4{
+  background-color:#111b2e;
+  color: white;
+}
+.body4child{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
