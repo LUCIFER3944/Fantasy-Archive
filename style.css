@@ -63,11 +63,14 @@ height: 100vh;
 }
 .body3{
  display: flex;
-justify-content: space-between;
+justify-content: center;
+
+background-color: #111b2e;
 }
 .body3first{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
   display:flex ;
+  background-color: #dc803a90;
   flex-direction: column;
   justify-content: center;
   align-items: center;
