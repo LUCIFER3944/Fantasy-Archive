@@ -90,3 +90,9 @@ background-color: #111b2e;
   align-items: center;
   flex-wrap: wrap;
 }
+.card{
+border-radius: 10%;
+}
+#img1{
+  border-radius: 10%;
+}
