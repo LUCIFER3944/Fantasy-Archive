@@ -285,4 +285,13 @@ main {
   background-color: #101010;
   
  }
- 
+ .cart{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+ }
+ #cart{
+  color: white;
+ }
