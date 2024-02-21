@@ -1,0 +1,10 @@
+.body3{
+    flex-direction: column;
+}
+.image2{
+    width: 100vw !important;
+    height: 100vh;
+  }
+  .cart{
+  display: none !important;
+  }
