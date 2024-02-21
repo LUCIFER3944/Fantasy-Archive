@@ -8,3 +8,9 @@
     width: 100vw !important;
     height: 100vh;
   }
+  .body4child{
+   justify-content: space-evenly;
+   flex-direction: column;
+
+  }
+  .card
