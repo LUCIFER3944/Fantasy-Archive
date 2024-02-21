@@ -282,7 +282,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #101010;
+  background-color: #111B2E;
+  
   
  }
  .cart{
@@ -295,3 +296,18 @@ main {
  #cart{
   color: white;
  }
+ .btnlol{
+  border-radius: 10%;
+ }
+ .form{
+  
+  display: flex;
+  flex-direction:column ;
+  background-color: #111b2e;
+ }
+.bossman{
+  
+  display: flex;
+  justify-content: space-around;
+  background-color: #111B2E;
+}
