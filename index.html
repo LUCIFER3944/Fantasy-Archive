@@ -30,6 +30,7 @@
       href="Tablet.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Aichatstyle.css">
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -87,6 +88,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Book Archive </a>
                 <a class="nav-link" href="#">Order List </a>
                 <a class="nav-link" href="#">Wish List </a>
               </li>
@@ -163,6 +165,7 @@
       />
     </div>
     
+    
 
     <div class="footer5">
       <div class="copyright">© 2024 All rights reserved</div>
@@ -173,8 +176,73 @@
         </span>
         By Lucifer
       </div>
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Ai chat assistant
+        </button>
+        <ul class="dropdown-menu">
+          
+            
+         
+          <section class="msger">
+            <header class="msger-header">
+              <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i> Fantasy Chat
+              </div>
+              <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+              </div>
+            </header>
+          
+            <main class="msger-chat">
+              <div class="msg left-msg">
+                <div
+                 class="msg-img"
+                 style="background-image: url(https://image.lexica.art/full_webp/1ca84c39-548f-400f-aefb-683ecaa7c731)"
+                ></div>
+          
+                <div class="msg-bubble">
+                  <div class="msg-info">
+                    <div class="msg-info-name">BOT</div>
+                    <div class="msg-info-time">12:45</div>
+                  </div>
+          
+                  <div class="msg-text">
+                    Hi, welcome to Fantasy Chat Go ahead and send me a message. 😄
+                  </div>
+                </div>
+              </div>
+          
+              <div class="msg right-msg">
+                <div
+                 class="msg-img"
+                 style="background-image: url(https://image.lexica.art/full_webp/4fa7d5e7-f5b9-4542-8e4c-f21b7a579540)"
+                ></div>
+          
+                <div class="msg-bubble">
+                  <div class="msg-info">
+                    <div class="msg-info-name">Lucifer</div>
+                    <div class="msg-info-time">12:46</div>
+                  </div>
+          
+                  <div class="msg-text">
+                    You can change your name in JS section!
+                  </div>
+                </div>
+              </div>
+            </main>
+          
+            <form class="msger-inputarea">
+              <input type="text" class="msger-input" placeholder="Enter your message...">
+              <button type="submit" class="msger-send-btn">Send</button>
+            </form>
+          </section>
+        </ul>
+      </div>
+   
     </div>
     <!-- Scripts -->
+    <script src="Aichat.js"></script>
     <script src="script.js"></script>
     <script src="Jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
