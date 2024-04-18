@@ -103,3 +103,17 @@ body {
   flex-wrap: wrap;
   background-color: #111b2e;
 }
+.card1{
+  display: flex;
+  background-color: #08152b;
+  justify-content: space-around;
+}
+.block{
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+background-color: #111b2e;
+color: white;
+}
