@@ -8,3 +8,9 @@
   .cart{
   display: none !important;
   }
+  .card1{
+    display: flex;
+    flex-direction: column;
+    background-color: #08152b;
+    align-items: center;
+  }
