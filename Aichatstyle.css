@@ -19,7 +19,7 @@ html {
 }
 
 .dropdown-menu{
-width: 900px;
+width: 360px;
 }
 
 .msger {
@@ -27,7 +27,7 @@ width: 900px;
   flex-flow: column wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 867px;
+  max-width: 167px;
   margin: 25px 10px;
   height: calc(100% - 50px);
   border: var(--border);
