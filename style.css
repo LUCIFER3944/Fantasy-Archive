@@ -107,6 +107,7 @@ body {
   display: flex;
   background-color: #08152b;
   justify-content: space-around;
+  align-items: center;
 }
 .block{
   height: 30vh;
