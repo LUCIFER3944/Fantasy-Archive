@@ -36,3 +36,20 @@ confirmButton.addEventListener("click", () => {
     alert("Thanks for your purchase. Your total amount is $" + totalPrice.toFixed(2));
     
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to filter books based on search input
+    document.getElementById("searchInput").addEventListener("input", function() {
+        var searchTerm = this.value.toLowerCase();
+        var bookElements = document.querySelectorAll(".book");
+        
+        bookElements.forEach(function(bookElement) {
+            var bookTitle = bookElement.querySelector("h2").textContent.toLowerCase();
+            if (bookTitle.includes(searchTerm)) {
+                bookElement.style.display = "block"; // Show the book if title matches search term
+            } else {
+                bookElement.style.display = "none"; // Hide the book if title does not match search term
+            }
+        });
+    });
+});
