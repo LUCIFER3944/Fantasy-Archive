@@ -39,6 +39,12 @@
     ></script>
   </head>
   <body>
+    <?php
+    session_start();
+    ECHO $_SESSION['email'];
+    
+    
+    ?>
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a
@@ -109,7 +115,7 @@
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="Profile.php">Profile</a></li>
                 </ul>
               </li>
             </ul>

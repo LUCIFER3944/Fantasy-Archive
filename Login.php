@@ -43,16 +43,18 @@
                     <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
                     <header>Login</header>
                 </div>
+
+                <form action="loginhandler.php" method="POST">
                 <div class="input-box">
-                    <input type="text" class="input-field" id="login-username-email" placeholder="Username or Email">
+                    <input type="text" class="input-field" id="login-username-email" placeholder="Username or Email" name="email">
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" id="login-password" placeholder="Password">
+                    <input type="password" class="input-field" id="login-password" placeholder="Password" name="password">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <button type="button" class="submit" id="login-submit">Sign In</button>
+                    <button type="submit" class="submit" id="">Sign In</button>
                 </div>
                 <div class="two-col">
                     <div class="one">
@@ -63,30 +65,35 @@
                         <label><a href="#">Forgot password?</a></label>
                     </div>
                 </div>
+                </form>
             </div>
+        
             
             <!------------------- registration form -------------------------->
+            
             <div class="register-container" id="register">
+
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                     <header>Sign Up</header>
                 </div>
+                <form action="handleSignup.php" method="post">
                 <div class="two-forms">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Firstname">
+                        <input type="text" class="input-field" placeholder="Firstname" name="fname">
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Lastname">
+                        <input type="text" class="input-field" placeholder="Lastname" name="lname">
                         <i class="bx bx-user"></i>
                     </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
+                    <input type="text" class="input-field" placeholder="Email" name="email">
                     <i class="bx bx-envelope"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
+                    <input type="password" class="input-field" placeholder="Password" name="password">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
@@ -102,6 +109,7 @@
                         <label><a href="#">Terms & conditions</a></label>
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </div>   
