@@ -1,3 +1,14 @@
+<?php
+    if(isset($_SESSION['login'])&& $_SESSION='true' ){
+      session_start();
+      ECHO $_SESSION['email'];
+    }else{
+      header('location:login.php');
+    }
+    
+    
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,12 +50,7 @@
     ></script>
   </head>
   <body>
-    <?php
-    session_start();
-    ECHO $_SESSION['email'];
-    
-    
-    ?>
+   
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a
@@ -110,8 +116,8 @@
                   Account
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Login.html">Log-in</a></li>
-                  <li><a class="dropdown-item" href="Login.html">Sign-up</a></li>
+                  <li><a class="dropdown-item" href="Login.php">Log-in</a></li>
+                  <li><a class="dropdown-item" href="Login.php">Sign-up</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
