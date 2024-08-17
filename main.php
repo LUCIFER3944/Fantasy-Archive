@@ -1,9 +1,7 @@
 <?php
-    if(isset($_SESSION['login'])&& $_SESSION='true' ){
       session_start();
-      ECHO $_SESSION['email'];
-    }else{
-      header('location:login.php');
+    if(!isset($_SESSION['login'])&& $_SESSION['login']!='true' ){
+     header('location:login.php');
     }
     
     

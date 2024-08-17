@@ -1,3 +1,34 @@
+<?php
+$id="";
+$name="";
+$email="";
+
+      session_start();
+    if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
+    $id=$_SESSION['id'];
+    include 'server.php';
+    $from="SELECT * FROM `userdetails` WHERE `id`='$id'";
+
+   $result=mysqli_query($conn,$from);
+   $row=mysqli_fetch_assoc($result);
+$name=$row['fname']." ".$row['lname'];
+$email=$row['email'];
+
+
+
+
+
+
+
+
+    }else{
+
+      header('location:login.php');
+    }
+    
+    
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +48,7 @@
             <li class="breadcrumb-item"><a href="#">User</a></li>
             <li class="breadcrumb-item active" aria-current="page">User Profile</li>
           </ol>
+          <a href="logout.php">logout</a>
         </nav>
       </div>
     </div>
@@ -27,7 +59,9 @@
           <div class="card-body text-center">
           <img src="image2/main-thumb-2281040343-200-webvdavnbrqqvnkowskkjehhdcgidiyf.jpeg" alt=""
               class="rounded-circle img-fluid" style="width: 150px;">
-            <h5 class="my-3">John Smith</h5>
+            <h5 class="my-3"> <?php
+            echo $name;
+            ?> </h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
             <div class="d-flex justify-content-center mb-2">
@@ -71,7 +105,9 @@
                 <p class="mb-0">Full Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Johnatan Smith</p>
+                <p class="text-muted mb-0"><?php 
+                echo $name;
+                ?></p>
               </div>
             </div>
             <hr>
@@ -80,7 +116,9 @@
                 <p class="mb-0">Email</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">example@example.com</p>
+                <p class="text-muted mb-0"><?php 
+                echo $email;
+                ?></p>
               </div>
             </div>
             <hr>
