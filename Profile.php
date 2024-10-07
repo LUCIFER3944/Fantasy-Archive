@@ -13,19 +13,10 @@ $email="";
    $row=mysqli_fetch_assoc($result);
 $name=$row['fname']." ".$row['lname'];
 $email=$row['email'];
-
-
-
-
-
-
-
-
     }else{
 
       header('location:login.php');
     }
-    
     
     
     ?>
