@@ -87,7 +87,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 512px;
-    height: 420px;
+    height: 720px;
     overflow: hidden;
     z-index: 2;
 }
@@ -232,7 +232,7 @@ header{
     }
     .form-box{
         width: 100%;
-        height: 500px;
+        height: 800px;
     }
     .register-container, .login-container{
         width: 100%;
